@@ -1,0 +1,27 @@
+@mixin card1 {
+ background-color: map-get($map: $palette, $key: 'primario');   
+}
+
+@mixin card-2 {
+    background-color: map-get($map: $palette, $key: 'primario');
+    margin-bottom: 1em;
+}
+
+@mixin descripcion1 {
+    color: map-get($map: $palette, $key: 'septimo');
+}
+
+.boton {
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+$palette: (
+    'primario': #01BAEF,
+    'secundario': #0B4F6C,
+    'tercero': #B80C09,
+    'cuarto': #040F16,
+    'quinto': #000,
+    'sexto': #FBFBFF,
+    "septimo": red,
+)
